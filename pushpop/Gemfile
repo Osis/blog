@@ -4,5 +4,5 @@ source "https://rubygems.org"
 gem "pushpop"
 gem "pushpop-keen"
 gem "pushpop-sendgrid"
-gem 'roadie'
+gem 'roadie', '>= 3.4.0'
 gem 'json', '~> 2.2.0'
