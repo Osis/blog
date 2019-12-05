@@ -35,8 +35,11 @@ jobs:
         cf target -o $CF_ORG -s $CF_SPACE
 
         pushd ./public/staging
+          echo '------'
           mkdir $PR_NUMBER
+          echo '------'
           mv !($PR_NUMBER) $PR_NUMBER
+          echo '------'
         popd
 
         cf push -f manifest-pr.yml --var pr-number=$PR_NUMBER
