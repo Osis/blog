@@ -29,7 +29,7 @@ jobs:
         export PR_NUMBER=$(jq -r '.number' $GITHUB_EVENT_PATH)
         export PATH=$PATH:/opt/hugo
         ./bin/build
-
+        
         pushd ./public/staging
           echo '------'
           mkdir $PR_NUMBER
